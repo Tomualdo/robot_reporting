@@ -1,0 +1,366 @@
+
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/0027.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/0028.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/0050.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE L,S=60%,A=1,T=0  (1.461,114.001,-30.053,-0.735,-60.040,1.738,0.285)A
+S2   MOVE L,S=50mm/s,A=1,T=0  (4.644,99.254,-16.556,-2.254,-58.871,5.449,0.285)A
+S3   MOVE L,S=50mm/s,A=1,T=0  (19.140,83.143,-4.960,-24.821,-58.147,7.809,0.285)A
+S4   MOVE L,S=60%,A=1,T=0  (16.490,72.734,7.368,-23.386,-58.835,4.107,0.285)A
+S5   MOVE L,S=60%,A=1,T=0  (15.876,69.801,10.078,-29.256,-62.180,1.940,0.285)A
+S6   MOVE L,S=25mm/s,A=1,T=0  (16.826,67.211,10.719,-30.078,-67.123,3.605,0.287)A
+S7   MOVE C,S=10mm/s,A=1,T=0  (18.304,68.214,9.331,-30.373,-67.512,5.181,0.287)A
+S8   MOVE C,S=10mm/s,A=1,T=0  (18.286,69.815,7.280,-29.461,-66.289,3.093,0.287)A
+S9   MOVE C,S=10mm/s,A=1,T=0  (17.831,75.519,-0.851,-29.936,-59.209,-0.398,0.287)A
+S10  MOVE C,S=10mm/s,A=1,T=0  (18.209,78.312,-4.580,-30.310,-58.578,0.526,0.287)A
+S11  MOVE C,S=10mm/s,A=1,T=0  (17.899,81.202,-7.927,-30.383,-58.034,0.497,0.287)A
+S12  MOVE L,S=60%,A=1,T=0  (8.899,84.668,-6.002,-15.321,-55.267,-46.511,0.287)A
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/0217.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+     'QLE D3320,D3330,D3340,D3390(OK)
+     WAIT DO32 'HOME POSITION CHECK
+     AXISCTRL ON,T1
+     DO21=1 'NO INTERFERENCE
+     WAIT DI19 'WELD READY
+S1   MOVE P,S=10%,A=1,T=0  (1.407,114.761,-30.863,-0.713,-59.197,1.680,-17.157)A
+     DO21=0 'NO INTERFERENCE
+     DOB1=1 'WELD CONDITION No.
+S2   MOVE P,S=60%,A=1,T=0  (1.447,115.973,-28.438,-0.709,-62.834,1.679,-1.153)A
+S3   MOVE P,S=60%,A=1,T=0  (6.104,106.996,-23.556,-43.384,-61.920,14.571,-0.424)A
+S4   MOVE P,S=30%,A=1,T=0  (-3.116,90.709,-20.765,-47.975,-46.072,18.695,-0.424)A
+S5   MOVE L,S=30%,A=0,T=0  (-8.492,84.550,-18.613,-43.111,-38.758,15.411,-0.424)A
+     DELAY 0.3
+     DO19=1 'AUTO WELD START
+     WEAVON WEV#=2
+     ARCON ASF#=1
+S6   SMOV S1,C,S=13.6mm/s,A=2,T=0  (-6.372,84.924,-19.261,-47.860,-40.523,31.442,-15.390)A
+S7   SMOV S1,C,S=13.6mm/s,A=2,T=0  (-2.433,82.954,-18.612,-57.636,-45.366,55.265,-37.496)A
+S8   SMOV S1,C,S=13.6mm/s,A=2,T=0  (-2.610,77.689,-5.960,-47.813,-54.740,33.288,-68.272)A
+S9   SMOV S1,C,S=13.6mm/s,A=2,T=0  (-4.416,77.050,-3.860,-43.105,-50.212,30.330,-97.150)A
+S10  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-3.801,76.081,-6.342,-50.735,-45.888,37.603,-121.085)A
+S11  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-5.259,73.319,-4.379,-49.094,-42.582,28.481,-154.143)A
+S12  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-8.305,75.865,-17.975,-71.474,-24.356,50.621,-200.742)A
+S13  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-9.885,77.046,-28.849,-116.320,-22.283,94.256,-233.783)A
+S14  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-6.654,78.073,-26.468,-82.039,-26.745,75.147,-271.000)A
+S15  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-9.100,82.184,-38.295,-122.032,-26.302,111.131,-297.443)A
+S16  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-3.653,84.364,-30.583,-79.367,-37.541,67.410,-346.000)A
+S17  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-5.154,86.105,-27.494,-66.047,-35.613,53.989,-358.753)A
+     ARCOF AEF#=1
+     WEAVOF
+     DO19=0 'AUTO WELD END
+S18  MOVE L,S=20%,A=2,T=0  (-1.018,89.854,-30.397,-69.804,-41.262,56.603,-358.753)A
+S19  MOVE P,S=20%,A=0,T=0  (10.901,127.152,-47.863,-55.319,-60.459,40.717,-358.753)A
+S20  MOVE P,S=7%,A=0,T=0 UNTIL DI18  (1.479,114.738,-30.324,-0.745,-59.713,1.756,-360.143)A
+     DELAY 0.3
+     ENDLESS ZERO
+S21  MOVE P,S=10%,A=1,T=0  (1.407,114.761,-30.863,-0.713,-59.197,1.680,-17.157)A
+     DO20=1 'WELD COMPLETE
+     DO21=1 'NO INTERFERENCE
+     DELAY 1
+     DO20=0 'WELD COMPLETE
+     DELAY 1
+     END
+     '_
+     '_
+     '
+     WEAVON WEV#=1
+S22  SMOV S1,C,S=13.6mm/s,A=2,T=0  (-3.606,84.16
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/9996.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=1,T=0  (844.084,-294.876,656.235,161.821,37.992,155.300,-131.292,&H0000)
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=1,T=0  (1339.865,-292.891,886.454,161.814,37.983,155.354,-203.386,&H0000)
+S2   MOVE P,S=60%,A=1,T=0  (1042.280,-294.088,845.567,161.813,37.985,155.336,-165.593,&H0000)
+S3   MOVE P,S=60%,A=1,T=0  (844.083,-294.873,656.226,161.821,37.992,155.301,-131.292,&H0000)
+
+		-----------/home/tom/Projects/proface/robotFiles/ctr/20200414/9998.JOB--------------
+
+Program File Format Version : 1.6  MechType: 162(HA006-04)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=1,T=0  (&H003EF69B,&H003FD2FA,&H0040567D,&H00405AD0,&H003EF739,&H004099D1)E
+S2   MOVE P,S=60%,A=1,T=0  (&H003F6380,&H003FE6E4,&H0040693C,&H003F9EBF,&H003EE5B4,&H00407606)E
+S3   MOVE P,S=60%,A=1,T=0  (&H003ED455,&H003F85B0,&H003FDDB1,&H0040D03A,&H003F4D27,&H003FBCDF)E
+S4   MOVE P,S=60%,A=1,T=0  (&H003EA22A,&H004029D3,&H00416921,&H00417107,&H003E8539,&H0041403A)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_LH/20200414/0005.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_LH/20200414/6600.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_LH/20200414/9999.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
+     END
+S2   MOVE P,S=60%,A=3,T=0 'S-90  (-90.000,90.000,0.000,-0.001,-89.999,-0.003)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_RH/20200414/0006.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_RH/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (&H00428F35,&H003D400A,&H003D9744,&H00401E14,&H003F9BAE,&H003FF17B,&H00400000)E
+S2   MOVE P,S=60%,A=3,T=0  (&H004081EA,&H003DF0B4,&H003D6803,&H003EB901,&H00400307,&H00401376,&H00400000)E
+S3   MOVE P,S=60%,A=3,T=0  (&H0040BECE,&H003EA5B0,&H003DE80D,&H003EB896,&H004012CA,&H003F8322,&H00400000)E
+S4   MOVE P,S=60%,A=3,T=0  (&H00443C77,&H003EC301,&H003DB378,&H004183F7,&H0040190F,&H0040AE13,&H00400000)E
+S5   MOVE P,S=60%,A=3,T=0  (&H00448150,&H003D8801,&H003CF8BF,&H00417F60,&H00400109,&H003FE1CA,&H00400000)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_02_RH/20200414/9999.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0 'S -90  (0.000,90.000,0.000,-0.001,-89.999,-0.003,0.000)A
+     END
+S2   MOVE P,S=60%,A=3,T=0 'S -90  (-90.000,90.000,0.000,-0.001,-89.999,-0.006,0.000)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_LH/20200414/0005.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_LH/20200414/0008.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_LH/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=2  (&H003D7B45,&H003EE517,&H003EB1DD,&H003FFA29,&H003F5147,&H003FDDEA)E
+S2   MOVE P,S=60%,A=3,T=2  (&H003E03EE,&H003F3D04,&H003EF46E,&H0040C448,&H003F853C,&H00406014)E
+S3   MOVE P,S=60%,A=3,T=2  (&H003D3691,&H003EFCC5,&H003EC6B9,&H004001CF,&H003F1298,&H004122B3)E
+S4   MOVE P,S=60%,A=3,T=2  (&H003D607F,&H003EFACB,&H003EC92A,&H003F9ED1,&H003F240F,&H003F08B3)E
+S5   MOVE P,S=60%,A=3,T=2  (&H003CAF67,&H003FEF72,&H003F90ED,&H003F30EB,&H003FFEA4,&H003FE2D2)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_LH/20200414/9999.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
+     END
+S2   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_RH/20200414/0000.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (137.361,112.217,35.387,7.191,-114.409,-13.825,-0.001)A
+S2   MOVE P,S=30%,A=3,T=0  (144.415,92.594,45.117,7.192,-114.410,-13.825,-0.001)A
+S3   MOVE L,S=5%,A=0,T=0  (144.196,99.064,32.328,6.980,-108.158,-14.836,-0.002)A
+     DELAY 10 '10mm
+S4   MOVE P,S=30%,A=3,T=0  (144.415,92.594,45.117,7.192,-114.410,-13.825,-0.001)A
+S5   MOVE P,S=60%,A=3,T=0  (137.361,112.217,35.387,7.191,-114.410,-13.825,-0.001)A
+     END
+S6   MOVE P,S=60%,A=3,T=0  (51.318,63.250,18.791,0.000,0.000,0.000,-0.001)A
+S7   MOVE P,S=60%,A=3,T=0  (144.196,99.064,32.328,6.979,-108.157,-11.358,-0.002)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_RH/20200414/0521.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf01_03_RH/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (&H0040541E,&H003D94A2,&H003E31C1,&H00404DCE,&H003FB544,&H003FB30E,&H00400000)E
+S2   MOVE P,S=60%,A=3,T=0  (&H00406E12,&H003E38AF,&H003EA2A6,&H00407B99,&H00400099,&H00400168,&H00400000)E
+S3   MOVE P,S=60%,A=3,T=0  (&H003F870C,&H003E046C,&H003E8D07,&H00400EC6,&H003FC0D0,&H0040AA3C,&H00400000)E
+S4   MOVE P,S=60%,A=3,T=0  (&H003F9704,&H003DB9D0,&H003E56B4,&H003FA043,&H003F9E31,&H003F4219,&H00400000)E
+S5   MOVE P,S=60%,A=3,T=0  (&H003EAC99,&H003E73B4,&H003EA654,&H003F360E,&H004022E0,&H003FF757,&H00400000)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_02_LH/20200414/0600.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=100%,A=1,T=0  (-0.006,119.802,40.344,0.010,-64.062,-93.986)A
+     DELAY 0.5
+S2   MOVE P,S=100%,A=1,T=0  (-0.006,119.802,40.344,0.009,-64.062,93.687)A
+     DELAY 0.5
+     GOTO S1
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_02_LH/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=0  (&H003D507E,&H003F3769,&H003FFA6B,&H003FF485,&H003FE3FF,&H003FFEF5)E
+S2   MOVE P,S=60%,A=3,T=0  (&H003DA7E9,&H003F9E67,&H00406ADE,&H004054BC,&H004026EF,&H00402329)E
+S3   MOVE P,S=60%,A=3,T=0  (&H003CCC0C,&H0040014C,&H0040C50A,&H003FB505,&H00401A7D,&H00411BC6)E
+S4   MOVE P,S=60%,A=3,T=0  (&H003D92DD,&H003F920A,&H00406039,&H003FF187,&H003FE8BE,&H003F16BF)E
+S5   MOVE P,S=60%,A=3,T=0  (&H003D3202,&H0040AFB9,&H0041AF19,&H003FAFEF,&H0040C871,&H003FA9D7)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_02_LH/20200414/9999.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
+     END
+S2   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_03_LH/20200414/0600.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_03_RH/20200414/0100.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (0.000,120.000,30.000,0.000,-29.999,0.000,-0.001)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_03_RH/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (&H003FD7CC,&H003D5DCE,&H003DC415,&H00400E31,&H003F8AD3,&H003FF915,&H00400000)E
+S2   MOVE P,S=60%,A=3,T=0  (&H0040A203,&H003D6073,&H003DAB9E,&H00409A45,&H003F99B2,&H003FCF22,&H00400000)E
+S3   MOVE P,S=60%,A=3,T=0  (&H003FC97E,&H003D0E77,&H003D8E8E,&H004045C1,&H003F4E68,&H0040A4BB,&H00400000)E
+S4   MOVE P,S=60%,A=3,T=0  (&H003EDB7B,&H003D6405,&H003DAB55,&H003F1C37,&H003F8FDC,&H003F8CFF,&H00400000)E
+S5   MOVE P,S=60%,A=3,T=0  (&H003E69DF,&H003E0F19,&H003DE99F,&H003EF467,&H003FE759,&H003FE76F,&H00400000)E
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_06/20200414/0087.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=50%,A=1,T=0  (98.438,126.720,-42.597,3.161,-93.994,14.142,186.139)A
+
+		-----------/home/tom/Projects/proface/robotFiles/lntDpf02_SPOT_2/20200414/0035.JOB--------------
+
+Program File Format Version : 1.6  MechType: 388(HS220-02)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE L,S=100%,A=3,T=2  (-75.000,135.000,-45.001,90.000,-70.000,-90.000,60.000)A
+
+		-----------/home/tom/Projects/proface/robotFiles/mainPe02/20200414/0017.JOB--------------
+
+Program File Format Version : 1.6  MechType: 126(HA006-03)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=1,T=1  (294.104,232.627,507.325,-176.581,64.250,-73.041,&H0000)
+
+		-----------/home/tom/Projects/proface/robotFiles/mainPe03/20200414/0200.JOB--------------
+
+Program File Format Version : 1.6  MechType: 126(HA006-03)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE L,S=60%,A=3,T=1  (336.252,418.650,662.798,-174.675,-11.737,-125.822,&H0000)
+     DELAY 0.5
+     DOB1=1
+S2   MOVE L,S=30%,A=3,T=1  (344.295,798.206,597.497,-179.928,21.317,-118.336,&H0000)
+S3   MOVE L,S=50mm/s,A=3,T=1  (344.296,798.222,566.534,-179.930,21.319,-118.337,&H0000)
+     DELAY 0.5
+     ARCON
+S4   MOVE L,S=8mm/s,A=1,T=1  (274.139,797.332,566.564,-179.931,21.323,-118.338,&H0000)
+     ARCOF
+
+		-----------/home/tom/Projects/proface/robotFiles/mainQl02/20200414/0105.JOB--------------
+
+Program File Format Version : 1.6  MechType: 399(HA006A-02)  TotalAxis: 6  AuxAxis: 0
+     'Dual F1080/F1480/F1490/F1880/F1890 Leskle
+     '
+     WAIT DO32 'Robot Work Home
+     '(( Part List ))
+     'Part No :
+     '
+     '(( Robot Cycle Time Check Start ))
+     V1!=TIMER 'Robot Cycle Time Check Start
+     '
+     '(( ARC Welding In Ok ))
+     WAIT DI11 'Arc Welding In Ok
+     DO18=0 'Jig Non Interference
+     WAIT DI11 'Arc Welding In Ok
+     '
+S1   MOVE P,S=80%,A=5,T=1  (0.220,125.636,-12.370,0.027,-93.542,-2.874)A
+     '
+     '(( ARC Welding Condition ))
+     DOB1=4 'ARC Welding Condition "3"
+     '
+S2   MOVE P,S=100%,A=5,T=1  (37.703,111.272,-6.333,1.966,-105.745,40.405)A
+S3   MOVE P,S=100%,A=5,T=1  (26.368,56.523,32.045,-21.290,-100.699,31.729)A
+S4   MOVE L,S=100%,A=5,T=1  (24.201,45.360,43.480,-28.690,-114.766,25.897)A
+S5   MOVE L,S=40%,A=1,T=1  (23.027,45.183,42.307,-28.473,-115.802,23.410)A
+     DELAY 0.1
+     ARCON ASF#=1
+S6   MOVE C,S=8mm/s,A=2,T=1  (27.089,52.545,28.226,-33.757,-107.326,29.207)A
+S7   MOVE C,S=8mm/s,A=2,T=1  (26.444,86.769,-15.338,-43.651,-67.737,-2.070)A
+S8   MOVE C,S=8mm/s,A=2,T=1  (18.227,101.073,-29.416,-39.625,-44.317,-33.387)A
+S9   MOVE C,S=8.3mm/s,A=2,T=1  (12.147,106.258,-35.334,-32.763,-31.109,-52.756)A
+     ARCOF AEF#=1
+S10  MOVE L,S=100%,A=2,T=1  (20.001,115.788,-43.033,-45.423,-37.311,-30.115)A
+S11  MOVE P,S=100%,A=5,T=1  (28.257,115.235,-28.095,-25.045,-68.067,-46.748)A
+S12  MOVE P,S=100%,A=5,T=1  (3.022,119.346,-30.511,-10.669,-59.778,41.808)A
+S13  MOVE P,S=100%,A=5,T=1  (-19.149,80.897,-11.295,45.155,-81.480,-24.459)A
+S14  MOVE L,S=100%,A=5,T=1  (-15.204,51.860,18.685,48.030,-105.551,-39.365)A
+S15  MOVE L,S=40%,A=1,T=1  (-11.737,54.652,16.776,45.892,-102.568,-36.986)A
+     DELAY 0.1
+     ARCON ASF#=1
+S16  MOVE C,S=8mm/s,A=1,T=1  (-13.571,72.063,-4.920,49.939,-84.939,-29.149)A
+S17  MOVE C,S=8mm/s,A=1,T=1  (-5.785,101.208,-34.942,56.662,-48.121,-1.540)A
+S18  MOVE C,S=8mm/s,A=1,T=1  (13.987,108.273,-39.292,6.475,-20.459,82.827)A
+     ARCOF AEF#=1
+S19  MOVE L,S=100%,A=2,T=1  (14.739,109.692,-38.293,-4.386,-23.297,98.781)A
+S20  MOVE P,S=100%,A=5,T=1  (18.175,124.799,-37.611,-5.302,-52.433,104.922)A
+S21  MOVE P,S=100%,A=5,T=1  (19.241,138.992,-23.211,-0.573,-93.328,4.235)A
+S22  MOVE P,S=100%,A=5,T=1  (44.309,136.059,-40.364,-44.124,-82.108,-108.298)A
+     '
+     '(( ARC Welding Condition ))
+     DOB1=1 'ARC Welding Condition "1"
+     '
+S23  MOVE L,S=100%,A=5,T=1  (49.382,134.811,-50.995,-52.092,-76.763,-111.922)A
+S24  MOVE L,S=40%,A=1,T=1  (46.851,130.729,-49.821,-52.691,-76.318,-108.604)A
+     ARCON ASF#=1
+     WEAVON WEV#=2
+S25  MOVE C,S=13mm/s,A=2,T=1  (46.495,130.585,-50.199,-52.790,-76.468,-107.787)A
+S26  MOVE C,S=13mm/s,A=2,T=1  (46.255,129.767,-50.166,-52.903,-76.893,-106.399)A
+S27  MOVE C,S=13.5mm/s,A=2,T=1  (43.600,132.073,-50.977,-50.391,-74.572,-106.065)A
+     WEAVOF
+     ARCOF AEF#=1
+     DOB1=3 'ARC Welding Condition "3"
+S28  MOVE L,S=100%,A=2,T=1  (41.396,124.997,-44.425,-44.500,-77.677,-110.531)A
+S29  MOVE P,S=100%,A=5,T=1  (48.374,127.217,-43.267,-45.532,-81.895,-98.285)A
+S30  MOVE P,S=100%,A=5,T=1  (58.618,111.077,-49.840,-51.287,-90.209,-52.083)A
+     DOB1=3 'ARC Welding Condition "3"
+S31  MOVE L,S=100%,A=2,T=1  (64.778,117.041,-70.818,-75.476,-95.156,-36.223)A
+S32  MOVE L,S=40%,A=1,T=1  (63.567,117.105,-71.544,-77.412,-95.567,-34.536)A
+     DELAY 0.1
+     ARCON ASF#=1
+     WEAVOF
+     WEAVON WEV#=3
+S33  MOVE L,S=8mm/s,A=1,T=1  (63.700,132.901,-78.082,-78.537,-89.113,-32.175)A
+     WEAVOF
+     ARCOF AEF#=1
+     DOB1=1 'ARC Welding Condition "1"
+S34  MOVE L,S=60%,A=5,T=1  (66.063,81.676,-64.119,-67.532,-107.583,-8.148)A
+S35  MOVE L,S=40%,A=1,T=1  (67.094,118.592,-78.455,-80.560,-98.902,-23.975)A
+
+
+		-----------/home/tom/Projects/proface/robotFiles/scr1/20200414/9995.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (-8.254,138.762,-24.343,2.664,-72.054,-13.303,0.000)A
+S2   MOVE P,S=60%,A=3,T=0  (-5.102,117.570,-7.779,0.441,-67.348,-10.323,29.999)A
+S3   MOVE P,S=60%,A=3,T=0  (-3.599,99.571,2.368,-0.705,-59.498,-8.689,60.000)A
+
+		-----------/home/tom/Projects/proface/robotFiles/scr1/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE P,S=60%,A=3,T=0  (&H00404078,&H003ECE88,&H003FACD8,&H00401198,&H003F4CBC,&H003FECC0,&H00400AB8)E
+S2   MOVE P,S=60%,A=3,T=0  (&H00411CEC,&H003F652B,&H004020A6,&H00410763,&H003FD280,&H003FE9F4,&H00400AB8)E
+S3   MOVE P,S=60%,A=3,T=0  (&H00416D3B,&H003EB162,&H003EE2C5,&H0041BF5F,&H003F6775,&H003FD447,&H00400AB8)E
+S4   MOVE P,S=60%,A=3,T=0  (&H003F0228,&H003EB733,&H003F06A4,&H003E58DD,&H003F64AA,&H003FDF1F,&H00400AB8)E
+S5   MOVE P,S=60%,A=3,T=0  (&H003EB9F7,&H003FDF09,&H003FC3ED,&H003E12CD,&H00403CE1,&H003FECFC,&H00400AB8)E
+
+		-----------/home/tom/Projects/proface/robotFiles/scr2/20200414/9997.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+S1   MOVE L,S=60%,A=3,T=0  (&H004205AD,&H003F6E7E,&H004043BC,&H0040645B,&H003FCEEB,&H003FD0B4,&H00400000)E
+S2   MOVE L,S=60%,A=3,T=0  (&H00417707,&H003EDB80,&H003F8D2B,&H003FC54F,&H003F5A52,&H003FDC68,&H00400000)E
+S3   MOVE L,S=60%,A=3,T=0  (&H00427D2E,&H0040066F,&H0040C684,&H0040E6C6,&H00403E44,&H003FDAD1,&H00400000)E
+S4   MOVE L,S=60%,A=3,T=0  (&H004288F5,&H003E8FDD,&H003ECCEF,&H004139C9,&H003F294A,&H003F8D93,&H00400000)E
+S5   MOVE L,S=60%,A=3,T=0  (&H00418A0C,&H0040B9AE,&H004211E4,&H003FE2F6,&H0040AD8D,&H003FE3E2,&H00400000)E
+S6   MOVE L,S=60%,A=3,T=0  (&H0040D0AE,&H003FC8F8,&H00409008,&H003F6C22,&H003FED73,&H0040AB3A,&H00400000)E
+S7   MOVE L,S=60%,A=3,T=0  (&H00428567,&H0040388F,&H0040FBA9,&H0040C25C,&H00403DB4,&H003F5C1F,&H00400000)E
+
+		-----------/home/tom/Projects/proface/robotFiles/scr3/20200414/9999.JOB--------------
+
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 6  AuxAxis: 0
+S1   MOVE P,S=60%,A=3,T=0  (0.000,90.000,0.000,0.000,-90.000,0.000)A
